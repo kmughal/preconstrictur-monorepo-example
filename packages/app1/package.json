@@ -1,0 +1,16 @@
+{
+  "name": "app1",
+  "version": "1.0.0",
+  "description": "simple app1",
+  "main": "dist/app1.cjs.js",
+  "module": "dist/app1.esm.js",
+  "author": "khurram",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "start": "nodemon ."
+  }
+}

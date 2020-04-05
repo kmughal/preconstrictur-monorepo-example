@@ -1,0 +1,22 @@
+{
+    "name": "monorepo-sample",
+    "version": "1.0.0",
+    "license": "MIT",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "dependencies": {
+        "@babel/preset-env": "^7.9.0",
+        "@preconstruct/cli": "^1.1.8"
+    },
+    "preconstruct": {
+        "packages": [
+            "packages/*"
+        ]
+    },
+    "scripts": {
+        "postinstall": "preconstruct dev",
+        "watch" : "preconstruct watch"
+    }
+}
